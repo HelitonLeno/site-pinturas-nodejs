@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { 
     title: 'Ton&Leno | Pinturas',
-    titleH1:'Ton%Leno' 
+    titleH1:'Ton&Leno' 
   });
 });
 
