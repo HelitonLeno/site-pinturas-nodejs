@@ -701,6 +701,10 @@ body.mobile-nav-active #mobile-nav-toggle {
     float: left;
 }
 
+h4.title {
+    color: #fff;
+}
+
 #services .icon i {
     color: #18d26e;
     font-size: 36px;
