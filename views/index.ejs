@@ -44,7 +44,7 @@
         <nav id="nav-menu-container">
             <ul class="nav-menu">
                 <li class="menu-active"><a href="#intro">Inicio</a></li>
-                <li><a href="#">Simulador</a></li>
+                <li><a href="/simulador">Simulador</a></li>
                 <li><a href="#services">Serviços</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#about">Sobre</a></li>
@@ -65,7 +65,8 @@
 
             <div class="carousel-inner" role="listbox">
 
-                <div class="carousel-item active" style="background-image: url('images/intro-carousel/carousel01.jpg');">
+                <div class="carousel-item active"
+                     style="background-image: url('images/intro-carousel/carousel01.jpg');">
                     <div class="carousel-container">
                         <div class="carousel-content">
                             <h2>Nós somos profissionais</h2>
@@ -86,6 +87,7 @@
                         </div>
                     </div>
                 </div>
+
                 <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
@@ -97,6 +99,7 @@
                 </a>
             </div>
         </div>
+    </div>
 </section><!-- #intro -->
 
 <main id="main">
@@ -246,7 +249,7 @@
                         </figure>
 
                         <div class="portfolio-info">
-                                <p><strong>Textura</strong></p>
+                            <p><strong>Textura</strong></p>
                         </div>
                     </div>
                 </div>
@@ -260,7 +263,7 @@
                         </figure>
 
                         <div class="portfolio-info">
-                                <p><strong>Textura</strong></p>
+                            <p><strong>Textura</strong></p>
                         </div>
                     </div>
                 </div>
@@ -333,16 +336,16 @@
                 </div>
 
                 <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="about-col">
-                            <div class="img">
-                                <img src="images/about-vision.jpg" alt="" class="img-fluid">
-                                <div class="icon"><i class="ion-ios-eye-outline"></i></div>
-                            </div>
-                            <h2 class="title"><a href="#">Nossa visão</a></h2>
-                            <p>Estar em constante aprendizado e evolução para continuarmos trabalhando
-                                 com o que mais gostamos: pintura.</p>
+                    <div class="about-col">
+                        <div class="img">
+                            <img src="images/about-vision.jpg" alt="" class="img-fluid">
+                            <div class="icon"><i class="ion-ios-eye-outline"></i></div>
                         </div>
+                        <h2 class="title"><a href="#">Nossa visão</a></h2>
+                        <p>Estar em constante aprendizado e evolução para continuarmos trabalhando
+                            com o que mais gostamos: pintura.</p>
                     </div>
+                </div>
 
                 <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="about-col">
@@ -412,14 +415,14 @@
                     <div class="icon"><i class="ion-ios-people-outline"></i></div>
                     <h4 class="title"><a href="">Verniz ou Stain</a></h4>
                     <p class="description">Funciona como um revestimento sobre a madeira, criando uma camada protetora,
-                         desse modo evita que possíveis danos sejam causados pela água, pó ou outros
+                        desse modo evita que possíveis danos sejam causados pela água, pó ou outros
                         componentes.</p>
                 </div>
 
             </div>
 
         </div>
-    </section><!-- #services -->    
+    </section><!-- #services -->
 
     <!--==========================
   Contact Section
@@ -446,7 +449,8 @@
                     <div class="contact-phone">
                         <i class="ion-ios-telephone-outline"></i>
                         <h3>Telefones</h3>
-                        <p><img src="images/icon_whats.png"/><a href="tel:44999214246"> (44) 99921-4246 - Heliton</a></p>
+                        <p><img src="images/icon_whats.png"/><a href="tel:44999214246"> (44) 99921-4246 - Heliton</a>
+                        </p>
                         <p><img src="images/phone-black.png"><a href="tel:44999247004"> (44) 99924-7004 - Heleno</a></p>
                     </div>
                 </div>
@@ -541,7 +545,8 @@
                     <h4>News Letter</h4>
                     <p>Assine nossa Newsletter para receber nossas promoções exclusivas!</p>
                     <form action="" method="post">
-                        <input type="email" placeholder="email@dominio.com" name="email"><input type="submit" value="Assinar">
+                        <input type="email" placeholder="email@dominio.com" name="email"><input type="submit"
+                                                                                                value="Assinar">
                     </form>
                 </div>
 
@@ -551,7 +556,7 @@
 
     <div class="container">
         <div class="copyright">
-            &copy; Copyright <strong><%= titleH1%></strong>. Todos os direitos reservados.
+            &copy; Copyright <strong><%= titleH1 %></strong>. Todos os direitos reservados.
         </div>
     </div>
 </footer><!-- #footer -->
@@ -569,7 +574,6 @@
 <script src="javascripts/superfish/superfish.min.js"></script>
 <script src="javascripts/wow/wow.min.js"></script>
 <script src="javascripts/waypoints/waypoints.min.js"></script>
-<!--<script src="javascripts/counterup/counterup.min.js"></script>-->
 <script src="javascripts/owlcarousel/owl.carousel.min.js"></script>
 <script src="javascripts/isotope/isotope.pkgd.min.js"></script>
 <script src="javascripts/lightbox/js/lightbox.min.js"></script>

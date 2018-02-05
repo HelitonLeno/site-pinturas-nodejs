@@ -3,10 +3,10 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { 
-    title: 'Utopia | Pinturas',
-    titleH1:'Utopia Pinturas' 
-  });
+    res.render('simulador', {
+        title: 'Utopia | Pinturas',
+        titleH1:'Utopia Pinturas' 
+    });
 });
 
 module.exports = router;
