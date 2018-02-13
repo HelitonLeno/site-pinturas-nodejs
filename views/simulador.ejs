@@ -57,25 +57,10 @@
     </div>
 </header><!-- #header -->
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<div style="margin-top: 150px; margin-bottom: 130px; text-align: center">
+    <h3 style="font-size: 35px;">Em breve você poderá simular seu orçamento online.</h3>
+    <p style="font-size: 35px;">Aguarde!</p>
+</div>
 
 <!--==========================
   Contact Section
@@ -119,34 +104,40 @@
         </div>
 
         <div class="form">
+
             <div id="sendmessage">Sua mensagem foi enviada! Em breve entramos em contato. Obrigado!</div>
             <div id="errormessage"></div>
-            <form action="" method="post" role="form" class="contactForm">
+
+            <form action="#" method="post" role="form" class="contactForm">
+
                 <div class="form-row">
+
                     <div class="form-group col-md-6">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome"
-                               data-rule="minlen:4" data-msg="Digite no mínimo 4 letras"/>
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" data-rule="minlen:4" data-msg="Digite no mínimo 4 letras" />
                         <div class="validation"></div>
                     </div>
+
                     <div class="form-group col-md-6">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email"
-                               data-rule="email" data-msg="Digite um email válido"/>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email" data-rule="email" data-msg="Digite um email válido" />
                         <div class="validation"></div>
                     </div>
+
                 </div>
+
                 <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto"
-                           data-rule="minlen:4" data-msg="Digite no mínimo 8 letras no assunto"/>
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" data-rule="minlen:4" data-msg="Digite no mínimo 8 letras no assunto" />
                     <div class="validation"></div>
                 </div>
+
                 <div class="form-group">
-                        <textarea class="form-control" name="message" rows="5" data-rule="required"
-                                  data-msg="Escreva algo para nós" placeholder="Mensagem"></textarea>
+                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Escreva algo para nós" placeholder="Mensagem"></textarea>
                     <div class="validation"></div>
                 </div>
+
                 <div class="text-center">
                     <button type="submit">Enviar mensagem</button>
                 </div>
+
             </form>
         </div>
 
@@ -228,6 +219,8 @@
 <script src="javascripts/waypoints/waypoints.min.js"></script>
 <script src="javascripts/isotope/isotope.pkgd.min.js"></script>
 <script src="javascripts/touchSwipe/jquery.touchSwipe.min.js"></script>
+
+<script src="javascripts/contactform.js"></script>
 <!-- Template Main Javascript File -->
 <script src="javascripts/simulador.js"></script>
 
