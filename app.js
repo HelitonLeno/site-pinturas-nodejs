@@ -25,6 +25,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/simulador', simulador);
 
+app.use(function(req,res,next) {
+    if(req.headers["x-forwarded-proto"] == "http") {
+        res.redirect("https://"+ req.headers.host + req.url);
+    } else {
+        return next();
+    } 
+});
+
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
     var err = new Error('Not Found');
