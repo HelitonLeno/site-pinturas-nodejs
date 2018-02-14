@@ -2,15 +2,18 @@
 <html lang="pt-BR">
 <head>
     <meta charset="utf-8">
+
     <title><%= title %></title>
+
     <meta name="title" content="Utopia Pinturas - Massa corrida | Textura | Grafiato">
     <meta name="description"
           content="Utopia Pinturas internas e externas, Massa corrida, Textura, Grafiato, CLIQUE e conheça!">
     <meta name="keywords"
-          content="pinturas, pintura interna, pintura externa, textura, grafiato, massa corrida, utopia, pintura maringá">
+          content="pinturas,pintura interna,pintura externa,textura,grafiato,massa corrida,utopia,pintura maringá">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Heliton Leno de Souza">
 
     <!-- Favicons -->
     <link href="images/favicon.png" rel="icon">
@@ -20,16 +23,13 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
           rel="stylesheet">
 
-    <!-- Bootstrap CDN CSS File -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Main Stylesheet File -->
+    <link href="stylesheets/style.css" rel="stylesheet">
+
     <!-- Libraries CSS Files -->
     <link href="javascripts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="javascripts/animate/animate.min.css" rel="stylesheet">
     <link href="javascripts/ionicons/css/ionicons.min.css" rel="stylesheet">
-
-    <!-- Main Stylesheet File -->
-    <link href="stylesheets/style.css" rel="stylesheet">
 
 </head>
 <body>
@@ -41,13 +41,13 @@
     <div class="container-fluid">
 
         <div id="logo" class="pull-left">
-            <h1><a href="#intro" class="scrollto"><%= titleH1 %></a></h1>
+            <h1><a href="/" class="scrollto"><%= titleH1 %></a></h1>
         </div>
 
         <nav id="nav-menu-container">
             <ul class="nav-menu">
-                <li class="menu-active"><a href="/#intro">Inicio</a></li>
-                <li><a href="/simulador">Simulador</a></li>
+                <li><a href="/#intro">Inicio</a></li>
+                <li class="menu-active"><a href="/simulador">Simulador</a></li>
                 <li><a href="/#services">Serviços</a></li>
                 <li><a href="/#portfolio">Portfolio</a></li>
                 <li><a href="/#about">Sobre</a></li>
@@ -113,24 +113,28 @@
                 <div class="form-row">
 
                     <div class="form-group col-md-6">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" data-rule="minlen:4" data-msg="Digite no mínimo 4 letras" />
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome"
+                               data-rule="minlen:4" data-msg="Digite no mínimo 4 letras"/>
                         <div class="validation"></div>
                     </div>
 
                     <div class="form-group col-md-6">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email" data-rule="email" data-msg="Digite um email válido" />
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email"
+                               data-rule="email" data-msg="Digite um email válido"/>
                         <div class="validation"></div>
                     </div>
 
                 </div>
 
                 <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" data-rule="minlen:4" data-msg="Digite no mínimo 8 letras no assunto" />
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto"
+                           data-rule="minlen:4" data-msg="Digite no mínimo 8 letras no assunto"/>
                     <div class="validation"></div>
                 </div>
 
                 <div class="form-group">
-                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Escreva algo para nós" placeholder="Mensagem"></textarea>
+                    <textarea class="form-control" name="message" rows="5" data-rule="required"
+                              data-msg="Escreva algo para nós" placeholder="Mensagem"></textarea>
                     <div class="validation"></div>
                 </div>
 
