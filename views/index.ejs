@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title><%= title %></title>
+    <title>Utopia | Pinturas - Internas e Externas</title>
 
     <meta name="title" content="Utopia Pinturas - Massa corrida | Textura | Grafiato">
     <meta name="description"
@@ -47,7 +47,7 @@ Header
         <div id="logo" class="pull-left">
             <h1>
                 <a href="/" class="scrollto">
-                    <%= titleH1 %>
+                    Utopia Pinturas
                 </a>
             </h1>
         </div>
@@ -485,37 +485,24 @@ Intro Section
 
             <div class="form">
 
-                <div id="sendmessage">Sua mensagem foi enviada! Em breve entramos em contato. Obrigado!</div>
-                <div id="errormessage"></div>
-
-                <form action="" method="post" role="form" class="contactForm">
+                <form action="send" method="post">
 
                     <div class="form-row">
-
                         <div class="form-group col-md-6">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome"
-                                   data-rule="minlen:4" data-msg="Digite no mínimo 4 letras"/>
-                            <div class="validation"></div>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome"/>
                         </div>
 
                         <div class="form-group col-md-6">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email"
-                                   data-rule="email" data-msg="Digite um email válido"/>
-                            <div class="validation"></div>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email"/>
                         </div>
-
                     </div>
 
                     <div class="form-group">
-                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto"
-                               data-rule="minlen:4" data-msg="Digite no mínimo 8 letras no assunto"/>
-                        <div class="validation"></div>
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto"/>
                     </div>
 
                     <div class="form-group">
-                        <textarea class="form-control" name="message" rows="5" data-rule="required"
-                                  data-msg="Escreva algo para nós" placeholder="Mensagem"></textarea>
-                        <div class="validation"></div>
+                        <textarea class="form-control" name="message" rows="5" placeholder="Mensagem"></textarea>
                     </div>
 
                     <div class="text-center">
@@ -540,7 +527,7 @@ Footer
 
                 <div class="col-lg-3 col-md-6 footer-info">
                     <h3>
-                        <%= titleH1 %>
+                        Utopia Pinturas
                     </h3>
                     <p>Peça seu orçamento sem compromisso. Pinturas para sua casa, loja ou prédio.</p>
                 </div>
@@ -586,7 +573,7 @@ Footer
 
     <div class="container">
         <div class="copyright">
-            &copy; Copyright <strong><%= titleH1 %></strong>. Todos os direitos reservados.
+            &copy; Copyright <strong>Utopia Pinturas</strong>. Todos os direitos reservados.
         </div>
     </div>
 </footer>
@@ -610,7 +597,7 @@ Footer
 <script src="javascripts/lightbox/js/lightbox.min.js"></script>
 <script src="javascripts/touchSwipe/jquery.touchSwipe.min.js"></script>
 <!-- Contact Form JavaScript File -->
-<script src="javascripts/contactform.js"></script>
+<!--<script src="javascripts/contactform.js"></script>-->
 
 <!-- Template Main Javascript File -->
 <script src="javascripts/main.js"></script>
