@@ -12,13 +12,11 @@ router.get('/', function (req, res, next) {
 
 router.post('/send', (req, res) => {
     let msg = `<p>Nome: ${req.body.name} </p>
-               <p>Email: ${req.body.email}</p>
-               <p>Assunto: ${req.body.subject}</p>
-               <p>Mensagem: ${req.body.message}</p>
-              `;
-
+           <p>Email: ${req.body.email}</p>
+           <p>Assunto: ${req.body.subject}</p>
+           <p>Mensagem: ${req.body.message}</p>
+          `;
     nodemailer.createTestAccount((err, account) => {
-
         let transporter = nodemailer.createTransport({
             host: 'smtp.umbler.com',
             port: 587,

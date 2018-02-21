@@ -1,5 +1,6 @@
 jQuery(document).ready(function ($) {
     "use strict";
+    var msg = 'OK';
 
     //Contact
     $('form.contactForm').submit(function () {
@@ -92,21 +93,17 @@ jQuery(document).ready(function ($) {
         else var str = $(this).serialize();
         $.ajax({
             type: "POST",
-            url: "/#intro",
+            url: "send",
             data: str,
-            success: function (msg) {
-                // alert(msg);
-                if (msg == 'OK') {
-                    $("#sendmessage").addClass("show");
-                    $("#errormessage").removeClass("show");
-                    $('.contactForm').find("input, textarea").val("");
-                } else {
-                    $("#sendmessage").removeClass("show");
-                    $("#errormessage").addClass("show");
-                    $('#errormessage').html(msg);
-                }
+            success: function () {
             }
         });
+        $('#sendmessage').addClass('show')
+        $('#errormessage').removeClass('show');
+        $('#name').val('');
+        $('#email').val('');
+        $('#subject').val('');
+        $('#message').val('');
         return false;
     });
 });

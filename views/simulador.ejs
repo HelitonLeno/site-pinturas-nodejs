@@ -105,31 +105,35 @@
         </div>
 
         <div class="form">
+            <div id="sendmessage">Sua mensagem foi enviada, entraremos em contato em breve. Obrigado!</div>
+            <div id="errormessage"></div>
 
-            <form action="send" method="post">
-
+            <form action="" method="post" role="form" class="contactForm">
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome"/>
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome"
+                               data-rule="minlen:4" data-msg="Digite no mínimo 4 letras"/>
+                        <div class="validation"></div>
                     </div>
-
                     <div class="form-group col-md-6">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email"/>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email"
+                               data-rule="email" data-msg="Digite um email válido"/>
+                        <div class="validation"></div>
                     </div>
                 </div>
-
                 <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto"/>
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto"
+                           data-rule="minlen:4" data-msg="Digite no mínimo 8 letras no assunto"/>
+                    <div class="validation"></div>
                 </div>
-
                 <div class="form-group">
-                    <textarea class="form-control" name="message" rows="5" placeholder="Mensagem"></textarea>
+                        <textarea class="form-control" name="message" id="message" rows="5" data-rule="required"
+                                  data-msg="Escreva algo para nós" placeholder="Mensagem"></textarea>
+                    <div class="validation"></div>
                 </div>
-
                 <div class="text-center">
                     <button type="submit">Enviar mensagem</button>
                 </div>
-
             </form>
         </div>
 
@@ -201,7 +205,7 @@
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
 <!-- JavaScript Libraries -->
-<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
@@ -214,9 +218,8 @@
 <script src="javascripts/isotope/isotope.pkgd.min.js"></script>
 <script src="javascripts/touchSwipe/jquery.touchSwipe.min.js"></script>
 
-<!--<script src="javascripts/contactform.js"></script>-->
+<script src="javascripts/contactform.js"></script>
 <!-- Template Main Javascript File -->
 <script src="javascripts/simulador.js"></script>
-
 </body>
 </html>
