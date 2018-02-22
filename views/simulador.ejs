@@ -57,11 +57,81 @@
     </div>
 </header><!-- #header -->
 
-<div style="margin-top: 150px; margin-bottom: 30px; text-align: center">
+<section>
+    <div class="container text-center" style="margin-top: 150px; background-color: #18d26e; padding: 10px">
+
+        <div style="margin-bottom: 25px; border: 1px solid #fff; display: inline-block" class="text-center">
+            <h2 class="h2" style="padding:4px; font-size: 25px; color: #111111; font-weight:bold; font-style: italic ">
+                Simule seu orçamento de forma parcial!</h2>
+            <p class="h2" style="font-size: 16px; color: #0b2e13"> - Em fase de testes e aprimoramento.</p>
+            <p class="h2" style="font-size: 16px; color: #0b2e13"> - Em breve mais opções.</p>
+        </div>
+
+        <form>
+
+            <label for="metros" style="color: #000000; font-weight: bold" class="h5">Digite quantos Metros (m²) possui o
+                imóvel oua área a ser efetuado o serviço? <br></label>
+
+            <div class="input-group mb-3">
+                <input type="number" class="form-control" id="metros" aria-label="Amount (to the nearest dollar)">
+                <div class="input-group-append">
+                    <span class="input-group-text">M²</span>
+                </div>
+            </div>
+
+            <div>
+                <label class="h5" style="color: #111; font-weight: bold; margin-bottom: 10px">Escolha uma opção
+                    abaixo</label>
+            </div>
+
+            <div class="form-check form-check-inline" style="color: #000000; font-weight: bold">
+                <input class="form-check-input" type="radio" name="tipoPintura" id="casa-nova" value="36" checked>
+                <label class="form-check-label" for="casa-nova">Casa nova</label>
+            </div>
+
+            <div class="form-check form-check-inline" style="color: #000000; font-weight: bold">
+                <input class="form-check-input" type="radio" name="tipoPintura" id="re-pintura" value="21">
+                <label class="form-check-label" for="re-pintura">Re-Pintura</label>
+            </div>
+
+            <div class="form-check form-check-inline" style="color: #111111; font-weight: bold">
+                <input class="form-check-input" type="radio" name="tipoPintura" id="textura" value="5">
+                <label class="form-check-label" for="textura">Textura</label>
+            </div>
+
+            <div class="form-check form-check-inline" style="color: #000000; font-weight: bold">
+                <input class="form-check-input" type="radio" name="tipoPintura" id="grafiato" value="8">
+                <label class="form-check-label" for="grafiato">Grafiato</label>
+            </div>
+
+            <div class="form-check form-check-inline" style="color: #000000; font-weight: bold">
+                <input class="form-check-input" type="radio" name="tipoPintura" id="massa-corrida" value="12">
+                <label class="form-check-label" for="massa-corrida">Massa Corrida</label>
+            </div>
+
+            <div class="form-check form-check-inline" style="color: #000000; font-weight: bold">
+                <input class="form-check-input" type="radio" name="tipoPintura" id="massa-acrilica" value="18">
+                <label class="form-check-label" for="massa-acrilica">Massa Acrílica</label>
+            </div>
+
+            <div class="">
+                <label class="h5" style="color: #000000; font-weight: bold; margin-top: 20px">Preço parcial: R$
+                    <span id="preco">0</span></label>
+            </div>
+
+            <div>
+                <button type="submit" id="calcular" class="btn btn-primary" style="margin-top: 5px">Calcular</button>
+            </div>
+
+        </form>
+    </div>
+</section>
+
+<!--<div style="margin-top: 150px; margin-bottom: 30px; text-align: center">
     <h3 style="font-size: 35px;">Em breve você poderá simular seu orçamento online.</h3>
     <p style="font-size: 35px;">Aguarde!</p>
     <img src="images/page-working.jpg" width="600px" height="auto" class="img-fluid" alt="">
-</div>
+</div>-->
 
 <!--==========================
   Contact Section
@@ -219,6 +289,7 @@
 <script src="javascripts/touchSwipe/jquery.touchSwipe.min.js"></script>
 
 <script src="javascripts/contactform.js"></script>
+<script src="javascripts/calcularOrcamento.js"></script>
 <!-- Template Main Javascript File -->
 <script src="javascripts/simulador.js"></script>
 </body>
