@@ -8,6 +8,7 @@ const secure = require('express-force-https');
 
 const index = require('./routes/index');
 const simulador = require('./routes/simulador');
+const cores = require('./routes/cores');
 
 const app = express();
 
@@ -25,6 +26,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
+app.use('/cores', cores);
 app.use('/simulador', simulador);
 
 // catch 404 and forward to error handler
