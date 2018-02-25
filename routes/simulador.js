@@ -24,7 +24,7 @@ router.post('/send', (req, res) => {
             secure: false,
             auth: {
                 user: 'contato@utopiapinturas.com.br',
-                pass: 'Heliton1825'
+                pass: ''
             }
         });
 
