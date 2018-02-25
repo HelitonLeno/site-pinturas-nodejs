@@ -5,7 +5,7 @@ const nodemailer = require('nodemailer');
 /* GET home page. */
 router.get('/', function (req, res, next) {
     res.render('parceiros', {
-        title: 'Utopia | Pinturas - Internas e Externas',
+        title: 'Utopia | Pinturas - Parceiros',
         titleH1: 'Utopia Pinturas'
     });
 });

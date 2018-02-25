@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function (req, res, next) {
     res.render('simulador', {
-        title: 'Utopia | Pinturas - Internas e Externas',
+        title: 'Utopia | Pinturas - Simulador',
         titleH1: 'Utopia Pinturas'
     });
 });

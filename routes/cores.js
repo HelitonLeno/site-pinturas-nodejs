@@ -5,7 +5,7 @@ const nodemailer = require('nodemailer');
 /* GET home page. */
 router.get('/', function (req, res, next) {
     res.render('cores', {
-        title: 'Utopia | Pinturas - Internas e Externas',
+        title: 'Utopia | Pinturas - Paleta de Cores',
         titleH1: 'Utopia Pinturas'
     });
 });
