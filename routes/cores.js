@@ -5,7 +5,7 @@ const nodemailer = require('nodemailer');
 /* GET home page. */
 router.get('/', function (req, res, next) {
     res.render('cores', {
-        title: 'Utopia | Pinturas - Paleta de Cores',
+        title: 'Utopia | Pinturas - Paleta de Cores | Pintor Maringá',
         titleH1: 'Utopia Pinturas'
     });
 });

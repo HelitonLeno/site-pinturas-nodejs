@@ -5,7 +5,7 @@ const nodemailer = require('nodemailer');
 /* GET home page. */
 router.get('/', function (req, res, next) {
     res.render('index', {
-        title: 'Utopia | Pinturas - Internas e Externas',
+        title: 'Utopia | Pinturas - Pintor Maringá | Pinturas Maringá ',
         titleH1: 'Utopia Pinturas'
     });
 });
