@@ -9,7 +9,7 @@ const secure = require('express-force-https');
 const index = require('./routes/index');
 const simulador = require('./routes/simulador');
 const cores = require('./routes/cores');
-var parceiros = require('./routes/parceiros');
+const parceiros = require('./routes/parceiros');
 
 const app = express();
 
