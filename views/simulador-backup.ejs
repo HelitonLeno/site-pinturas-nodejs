@@ -30,12 +30,6 @@
     <link href="javascripts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="javascripts/animate/animate.min.css" rel="stylesheet">
     <link href="javascripts/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <style>
-        .form-check-label {
-            color: #000000;
-            font-weight: bold;
-        }
-    </style>
 
 </head>
 <body>
@@ -65,87 +59,69 @@
 </header><!-- #header -->
 
 <section>
-    <div class="container text-center" style="margin-top: 100px; background-color: #18d26e; padding: 10px">
+    <div class="container text-center" style="margin-top: 120px; background-color: #18d26e; padding: 10px">
 
-        <div class="row text-center" style="margin-bottom: 20px; border: 1px solid #fff; display: inline-block">
-            <h2 class="h2" style="padding:10px; font-size: 25px; color: #111111; font-weight:bold; font-style: italic ">
+        <div style="margin-bottom: 25px; border: 1px solid #fff; display: inline-block" class="text-center">
+            <h2 class="h2" style="padding:4px; font-size: 25px; color: #111111; font-weight:bold; font-style: italic ">
                 Simule seu orçamento de forma parcial!</h2>
             <p class="h2" style="font-size: 16px; color: #0b2e13"> - Em fase de testes e aprimoramento.</p>
             <p class="h2" style="font-size: 16px; color: #0b2e13"> - Em breve mais opções.</p>
         </div>
 
-        <form class="form-horizontal" role="form" method="POST" action="/login">
-            <hr>
-            <div class="row">
-                <div class="col-12">
-                    <h2 style="font-size: 18px; font-weight: bold; color: #111111;">Digite quantos Metros (m²)
-                        possui o imóvel ou a área a ser efetuado o serviço</h2>
+        <form>
+
+            <label for="metros" style="color: #000000; font-weight: bold; font-size: 20px" class="h5">Digite quantos Metros (m²) possui o
+                imóvel ou a área a ser efetuado o serviço<br></label>
+
+            <div class="input-group mb-3">
+                <input type="number" class="form-control" id="metros" aria-label="Amount (to the nearest dollar)">
+                <div class="input-group-append">
+                    <span class="input-group-text">M²</span>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-3"></div>
-
-                <div class="col-md-6 col-11">
-                    <div class="form-group has-danger">
-                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                            <div class="input-group-addon" style="width: 2.6rem"></div>
-                            <input type="text" name="metros" class="form-control" id="metros"
-                                   placeholder="m²" required autofocus>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1"></div>
-            </div>
-            <hr>
-
-            <div class="row">
-                <div class=" text-center col-12">
-                    <h2 style="font-size: 18px; font-weight: bold; color: #111111;">Escolha uma opção abaixo</h2>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="form-check col-12 col-sm-6 col-lg-4">
-                    <input class="form-check-input" type="radio" name="tipoPintura" id="casa-nova" value="36" checked>
-                    <label class="form-check-label" for="casa-nova"> Casa nova completa </label>
-                </div>
-
-                <div class="form-check col-12 col-sm-6 col-lg-4">
-                    <input class="form-check-input" type="radio" name="tipoPintura" id="re-pintura" value="21">
-                    <label class="form-check-label" for="re-pintura"> Repintura </label>
-                </div>
-
-                <div class="form-check col-12 col-sm-6 col-lg-4">
-                    <input class="form-check-input" type="radio" name="tipoPintura" id="textura" value="5">
-                    <label class="form-check-label" for="textura"> Textura </label>
-                </div>
-
-                <div class="form-check col-12 col-sm-6 col-lg-4">
-                    <input class="form-check-input" type="radio" name="tipoPintura" id="grafiato" value="8">
-                    <label class="form-check-label" for="grafiato"> Grafiato </label>
-                </div>
-
-                <div class="form-check col-12 col-sm-5 col-lg-4">
-                    <input class="form-check-input" type="radio" name="tipoPintura" id="massa-corrida" value="12">
-                    <label class="form-check-label" for="massa-corrida">Massa Corrida</label>
-                </div>
-
-                <div class="form-check col-12 col-sm-6 col-lg-4">
-                    <input class="form-check-input" type="radio" name="tipoPintura" id="massa-acrilica" value="18">
-                    <label class="form-check-label" for="massa-acrilica">Massa Acrílica</label>
-                </div>
-            </div>
-            <hr>
             <div>
+                <label class="h5" style="color: #111; font-weight: bold; margin-bottom: 10px">Escolha uma opção
+                    abaixo</label>
+            </div>
+
+            <div class="form-check form-check-inline" style="color: #000000; font-weight: bold">
+                <input class="form-check-input" type="radio" name="tipoPintura" id="casa-nova" value="36" checked>
+                <label class="form-check-label" for="casa-nova">Casa nova</label>
+            </div>
+
+            <div class="form-check form-check-inline" style="color: #000000; font-weight: bold">
+                <input class="form-check-input" type="radio" name="tipoPintura" id="re-pintura" value="21">
+                <label class="form-check-label" for="re-pintura">Re-Pintura</label>
+            </div>
+
+            <div class="form-check form-check-inline" style="color: #111111; font-weight: bold">
+                <input class="form-check-input" type="radio" name="tipoPintura" id="textura" value="5">
+                <label class="form-check-label" for="textura">Textura</label>
+            </div>
+
+            <div class="form-check form-check-inline" style="color: #000000; font-weight: bold">
+                <input class="form-check-input" type="radio" name="tipoPintura" id="grafiato" value="8">
+                <label class="form-check-label" for="grafiato">Grafiato</label>
+            </div>
+
+            <div class="form-check form-check-inline" style="color: #000000; font-weight: bold">
+                <input class="form-check-input" type="radio" name="tipoPintura" id="massa-corrida" value="12">
+                <label class="form-check-label" for="massa-corrida">Massa Corrida</label>
+            </div>
+
+            <div class="form-check form-check-inline" style="color: #000000; font-weight: bold">
+                <input class="form-check-input" type="radio" name="tipoPintura" id="massa-acrilica" value="18">
+                <label class="form-check-label" for="massa-acrilica">Massa Acrílica</label>
+            </div>
+
+            <div class="">
                 <label class="h5" style="color: #fff; font-weight: bold; margin-top: 20px">Preço parcial: R$
                     <span id="preco">0</span></label>
             </div>
 
             <div>
-                <button type="submit" id="calcular" class="btn btn-primary" style="margin-top: 5px">Calcular
-                </button>
+                <button type="submit" id="calcular" class="btn btn-primary" style="margin-top: 5px">Calcular</button>
             </div>
 
         </form>

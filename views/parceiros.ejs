@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Utopia | Pinturas - Simulador</title>
+    <title>Utopia | Pinturas - Catálogo de cores</title>
 
-    <meta name="title" content="Utopia Pinturas - Massa corrida | Textura | Grafiato">
+    <meta name="title" content="Utopia | Pinturas - Catálogo de Cores">
     <meta name="description"
-          content="Utopia Pinturas, simule seu orçamento online - CLIQUE e conheça!">
+          content="Utopia Pinturas, catálogo de cores online - CLIQUE e confira!">
     <meta name="keywords"
-          content="maringá,pintura interna,pintura externa,textura,grafiato,massa corrida,utopia,pintura maringá">
+          content="catalogo,cores,catalogo cores,cor pintar casa,cor fachada,cor suvinil,cor coral,utopia,pintura maringá">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,13 +30,6 @@
     <link href="javascripts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="javascripts/animate/animate.min.css" rel="stylesheet">
     <link href="javascripts/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <style>
-        .form-check-label {
-            color: #000000;
-            font-weight: bold;
-        }
-    </style>
-
 </head>
 <body>
 
@@ -53,8 +46,8 @@
         <nav id="nav-menu-container">
             <ul class="nav-menu">
                 <li><a href="/">Inicio</a></li>
-                <li class="menu-active"><a href="/simulador">Simulador</a></li>
-                <li><a href="/cores">Cores</a></li>
+                <li><a href="/simulador">Simulador</a></li>
+                <li class="menu-active"><a href="/cores">Cores</a></li>
                 <li><a href="/#services">Serviços</a></li>
                 <li><a href="/#portfolio">Portfolio</a></li>
                 <li><a href="/#about">Sobre</a></li>
@@ -64,94 +57,69 @@
     </div>
 </header><!-- #header -->
 
-<section>
-    <div class="container text-center" style="margin-top: 100px; background-color: #18d26e; padding: 10px">
-
-        <div class="row text-center" style="margin-bottom: 20px; border: 1px solid #fff; display: inline-block">
-            <h2 class="h2" style="padding:10px; font-size: 25px; color: #111111; font-weight:bold; font-style: italic ">
-                Simule seu orçamento de forma parcial!</h2>
-            <p class="h2" style="font-size: 16px; color: #0b2e13"> - Em fase de testes e aprimoramento.</p>
-            <p class="h2" style="font-size: 16px; color: #0b2e13"> - Em breve mais opções.</p>
-        </div>
-
-        <form class="form-horizontal" role="form" method="POST" action="/login">
-            <hr>
+<section style="margin-top: 120px; margin-bottom: 50px">
+    <div class="container">
+        <form class="form-horizontal" role="form" method="POST" action="/">
             <div class="row">
-                <div class="col-12">
-                    <h2 style="font-size: 18px; font-weight: bold; color: #111111;">Digite quantos Metros (m²)
-                        possui o imóvel ou a área a ser efetuado o serviço</h2>
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <h2>Bem vindo</h2>
+                    <hr>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-3"></div>
-
-                <div class="col-md-6 col-11">
+                <div class="col-md-6">
                     <div class="form-group has-danger">
+                        <label class="sr-only" for="id">ID</label>
                         <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                            <div class="input-group-addon" style="width: 2.6rem"></div>
-                            <input type="text" name="metros" class="form-control" id="metros"
-                                   placeholder="m²" required autofocus>
-                            <hr>
+                            <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-vcard-o"></i></div>
+                            <input type="text" name="id" class="form-control" id="id"
+                                   placeholder="Nº Identificação" required autofocus>
                         </div>
                     </div>
                 </div>
-                <div class="col-1"></div>
-            </div>
-            <hr>
-
-            <div class="row">
-                <div class=" text-center col-12">
-                    <h2 style="font-size: 18px; font-weight: bold; color: #111111;">Escolha uma opção abaixo</h2>
-                </div>
             </div>
 
             <div class="row">
-                <div class="form-check col-12 col-sm-6 col-lg-4">
-                    <input class="form-check-input" type="radio" name="tipoPintura" id="casa-nova" value="36" checked>
-                    <label class="form-check-label" for="casa-nova"> Casa nova completa </label>
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="form-group has-danger">
+                        <label class="sr-only" for="nome">Nome</label>
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                            <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-at"></i></div>
+                            <input type="text" name="nome" class="form-control" id="nome"
+                                   placeholder="Primeiro nome" required autofocus>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="form-check col-12 col-sm-6 col-lg-4">
-                    <input class="form-check-input" type="radio" name="tipoPintura" id="re-pintura" value="21">
-                    <label class="form-check-label" for="re-pintura"> Repintura </label>
-                </div>
-
-                <div class="form-check col-12 col-sm-6 col-lg-4">
-                    <input class="form-check-input" type="radio" name="tipoPintura" id="textura" value="5">
-                    <label class="form-check-label" for="textura"> Textura </label>
-                </div>
-
-                <div class="form-check col-12 col-sm-6 col-lg-4">
-                    <input class="form-check-input" type="radio" name="tipoPintura" id="grafiato" value="8">
-                    <label class="form-check-label" for="grafiato"> Grafiato </label>
-                </div>
-
-                <div class="form-check col-12 col-sm-5 col-lg-4">
-                    <input class="form-check-input" type="radio" name="tipoPintura" id="massa-corrida" value="12">
-                    <label class="form-check-label" for="massa-corrida">Massa Corrida</label>
-                </div>
-
-                <div class="form-check col-12 col-sm-6 col-lg-4">
-                    <input class="form-check-input" type="radio" name="tipoPintura" id="massa-acrilica" value="18">
-                    <label class="form-check-label" for="massa-acrilica">Massa Acrílica</label>
-                </div>
-            </div>
-            <hr>
-            <div>
-                <label class="h5" style="color: #fff; font-weight: bold; margin-top: 20px">Preço parcial: R$
-                    <span id="preco">0</span></label>
             </div>
 
-            <div>
-                <button type="submit" id="calcular" class="btn btn-primary" style="margin-top: 5px">Calcular
-                </button>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="sr-only" for="password">Password</label>
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                            <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-key"></i></div>
+                            <input type="password" name="password" class="form-control" id="password"
+                                   placeholder="Senha" required>
+                        </div>
+                    </div>
+                </div>
             </div>
 
+            <div class="row" style="padding-top: 1rem">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <button type="submit" class="btn btn-success"><i class="fa fa-sign-in"></i> Login</button>
+                </div>
+            </div>
         </form>
     </div>
 </section>
-
 <!--==========================
   Contact Section
 ============================-->
@@ -225,7 +193,6 @@
                 </div>
             </form>
         </div>
-
     </div>
 </section><!-- #contact -->
 
@@ -277,7 +244,6 @@
                                                                                                 value="Assinar">
                     </form>
                 </div>
-
             </div>
         </div>
     </div>
@@ -300,16 +266,18 @@
         integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
 
+
 <script src="javascripts/easing/easing.min.js"></script>
 <script src="javascripts/superfish/superfish.min.js"></script>
 <script src="javascripts/wow/wow.min.js"></script>
 <script src="javascripts/waypoints/waypoints.min.js"></script>
-<script src="javascripts/isotope/isotope.pkgd.min.js"></script>
-<script src="javascripts/touchSwipe/jquery.touchSwipe.min.js"></script>
+<!--<script src="javascripts/isotope/isotope.pkgd.min.js"></script>-->
+<!--<script src="javascripts/touchSwipe/jquery.touchSwipe.min.js"></script>-->
 
 <script src="javascripts/contactform.js"></script>
-<script src="javascripts/calcularOrcamento.js"></script>
+<!--<script src="javascripts/calcularOrcamento.js"></script>-->
 <!-- Template Main Javascript File -->
 <script src="javascripts/simulador.js"></script>
+
 </body>
 </html>

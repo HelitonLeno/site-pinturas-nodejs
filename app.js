@@ -9,6 +9,7 @@ const secure = require('express-force-https');
 const index = require('./routes/index');
 const simulador = require('./routes/simulador');
 const cores = require('./routes/cores');
+const parceiros = require('./routes/parceiros');
 
 const app = express();
 
@@ -28,6 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/cores', cores);
 app.use('/simulador', simulador);
+app.use('/parceiros', parceiros);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
