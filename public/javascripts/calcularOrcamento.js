@@ -2,6 +2,8 @@ $('#calcular').on('click', function (e) {
     e.preventDefault();
 
     var metros = $('#metros').val();
+    metros = metros.replace(',', '.');
+
     var valor = '';
     var preco = $('#preco');
 
