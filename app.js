@@ -26,9 +26,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/cores', cores);
-app.use('/parceiros', parceiros);
-app.use('/simulador', simulador);
+app.use('/cores-pintar-casa', cores);
+app.use('/simulador-de-pintura', simulador);
+app.use('/parceiros-pinturas', parceiros);
 
 app.use(function (req, res, next) {
     var err = new Error('Not Found');
