@@ -4,7 +4,7 @@ const enviarEmail = require('../config/ContatoEmail');
 
 router.get('/', function (req, res, next) {
     res.render('simulador', {
-        title: 'Simulador de pinturas | Pintores Maringá - Pintor Maringá',
+        title: 'Simulador de pinturas | Pintor em Maringá',
         titleH1: 'Utopia Pinturas'
     });
 });

@@ -5,7 +5,7 @@ const enviarEmail = require('../config/ContatoEmail');
 /* GET home page. */
 router.get('/', function (req, res, next) {
     res.render('cores', {
-        title: 'Paleta de Cores para pintar sua casa | Pintores Maringá',
+        title: 'Cores para pintar sua casa | Pintores Maringá',
         titleH1: 'Utopia Pinturas'
     });
 });

@@ -5,7 +5,7 @@ const enviarEmail = require('../config/ContatoEmail');
 
 router.get('/', function (req, res, next) {
     res.render('index', {
-        title: 'Pintores em Maringá | Pintor Maringá - Utopia Pinturas',
+        title: 'Pinturas em Maringá | Pintor Maringá - Utopia Pinturas',
         titleH1: 'Utopia Pinturas'
     });
 });
