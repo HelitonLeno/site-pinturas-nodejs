@@ -10,6 +10,7 @@ const index = require('./routes/index');
 const simulador = require('./routes/simulador');
 const cores = require('./routes/cores');
 const parceiros = require('./routes/parceiros');
+const sitemap = require('./routes/sitemap');
 
 const app = express();
 
@@ -29,6 +30,7 @@ app.use('/', index);
 app.use('/cores-pintar-casa', cores);
 app.use('/simulador-de-pintura', simulador);
 app.use('/parceiros-pinturas', parceiros);
+// app.use('/sitemap.xml', sitemap);
 
 app.use(function (req, res, next) {
     var err = new Error('Not Found');
