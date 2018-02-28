@@ -8,7 +8,7 @@ module.exports = function (msg) {
             secure: false,
             auth: {
                 user: 'contato@utopiapinturas.com.br',
-                pass: ''
+                pass: 'Heliton1825'
             }
         });
 
