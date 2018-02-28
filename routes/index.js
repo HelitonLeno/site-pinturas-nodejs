@@ -5,7 +5,7 @@ const enviarEmail = require('../config/ContatoEmail');
 
 router.get('/', function (req, res, next) {
     res.render('index', {
-        title: 'Utopia | Pinturas - Pintor Maringá | Pinturas Maringá ',
+        title: 'Pintores em Maringá | Pintor Maringá - Utopia Pinturas',
         titleH1: 'Utopia Pinturas'
     });
 });
@@ -18,7 +18,6 @@ router.post('/send', (req, res) => {
           `;
 
     enviarEmail(msg);
-
 });
 
 module.exports = router;
