@@ -1,15 +1,16 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="utf-8">
 
-    <title><%= title %></title>
+    <title>
+        <%= title %>
+    </title>
 
     <meta name="title" content="Pinturas em Maringá - Pintor Maringá | Simule seu orçamento pelo nosso site">
-    <meta name="description"
-          content="Simule seu orçamento de forma parcial online. Pintores em maringá, Utopia Pinturas, venha conferir.">
-    <meta name="keywords"
-          content="maringá,pintura interna,pintura externa,textura,grafiato,massa corrida,utopia,pintura maringá">
+    <meta name="description" content="Simule seu orçamento de forma parcial online. Pintores em maringá, Utopia Pinturas, venha conferir.">
+    <meta name="keywords" content="maringá,pintura interna,pintura externa,textura,grafiato,massa corrida,utopia,pintura maringá">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,8 +21,7 @@
     <link href="images/favicon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
     <!-- Main Stylesheet File -->
     <link href="stylesheets/style.css" rel="stylesheet">
@@ -35,127 +35,127 @@
             color: #000000;
             font-weight: bold;
         }
+
     </style>
 
 </head>
+
 <body>
 
-<!--==========================
+    <!--==========================
   Header
 ============================-->
-<header id="header" style="background-color: black;">
-    <div class="container-fluid">
+    <header id="header" style="background-color: black;">
+        <div class="container-fluid">
 
-        <div id="logo" class="pull-left">
-            <h1><a href="/" class="scrollto">Utopia Pinturas</a></h1>
-        </div>
-
-        <nav id="nav-menu-container">
-            <ul class="nav-menu">
-                <li><a href="/">Inicio</a></li>
-                <li class="menu-active"><a href="/simulador-de-pintura">Simulador</a></li>
-                <li><a href="/cores-pintar-casa">Cores</a></li>
-                <li><a href="/#services">Serviços</a></li>
-                <li><a href="/#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contato</a></li>
-                <li><a href="/parceiros-pinturas">Parceiros</a></li>
-            </ul>
-        </nav><!-- #nav-menu-container -->
-    </div>
-</header><!-- #header -->
-<main role="main">
-    <section>
-        <div class="container text-center" style="margin-top: 100px; background-color: #18d26e; padding: 10px">
-
-            <div class="row text-center" style="margin-bottom: 20px; border: 1px solid #fff; display: inline-block">
-                <h2 class="h2"
-                    style="padding:10px; font-size: 25px; color: #111111; font-weight:bold; font-style: italic ">
-                    Simule seu orçamento de forma parcial!</h2>
-                <p class="h2" style="font-size: 16px; color: #0b2e13"> - Em fase de testes e aprimoramento.</p>
-                <p class="h2" style="font-size: 16px; color: #db2730; font-weight: bold">
-                    - Para saber mais entre em contato.
-                </p>
+            <div id="logo" class="pull-left">
+                <h1><a href="/" class="scrollto">Utopia Pinturas</a></h1>
             </div>
 
-            <form class="form-horizontal" role="form" method="POST" action="/login">
-                <hr>
-                <div class="row">
-                    <div class="col-12">
-                        <h2 style="font-size: 18px; font-weight: bold; color: #111111;">Digite quantos Metros (m²)
-                            possui o imóvel ou a área a ser efetuado o serviço</h2>
-                    </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li><a href="/">Inicio</a></li>
+                    <li class="menu-active"><a href="/simulador-de-pintura">Simulador</a></li>
+                    <li><a href="/cores-pintar-casa">Cores</a></li>
+                    <li><a href="/#services">Serviços</a></li>
+                    <li><a href="/#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="/parceiros-pinturas">Parceiros</a></li>
+                </ul>
+            </nav>
+            <!-- #nav-menu-container -->
+        </div>
+    </header>
+    <!-- #header -->
+    <main role="main">
+        <section>
+            <div class="container text-center" style="margin-top: 100px; background-color: #18d26e; padding: 10px">
+
+                <div class="row text-center" style="margin-bottom: 20px; border: 1px solid #fff; display: inline-block">
+                    <h2 class="h2" style="padding:10px; font-size: 25px; color: #111111; font-weight:bold; font-style: italic ">
+                        Simule seu orçamento de forma parcial!</h2>
+                    <p class="h2" style="font-size: 16px; color: #0b2e13"> - Em fase de testes e aprimoramento.</p>
+                    <p class="h2" style="font-size: 16px; color: #db2730; font-weight: bold">
+                        - Para saber mais entre em contato.
+                    </p>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-3"></div>
-
-                    <div class="col-md-6 col-11">
-                        <div class="form-group has-danger">
-                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                                <div class="input-group-addon" style="width: 2.6rem"></div>
-                                <input type="number" name="metros" class="form-control" id="metros"
-                                       placeholder="m²" required autofocus>
-                                <hr>
-                            </div>
+                <form class="form-horizontal" role="form" method="POST" action="/login">
+                    <hr>
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 style="font-size: 18px; font-weight: bold; color: #111111;">Digite quantos Metros (m²) possui o imóvel ou a área a ser efetuado o serviço</h2>
                         </div>
                     </div>
-                    <div class="col-1"></div>
-                </div>
-                <hr>
 
-                <div class="row">
-                    <div class=" text-center col-12">
-                        <h2 style="font-size: 18px; font-weight: bold; color: #111111;">Escolha uma opção abaixo</h2>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+
+                        <div class="col-md-6 col-11">
+                            <div class="form-group has-danger">
+                                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                    <div class="input-group-addon" style="width: 2.6rem"></div>
+                                    <input type="number" name="metros" class="form-control" id="metros" placeholder="m²" required autofocus>
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1"></div>
                     </div>
-                </div>
+                    <hr>
 
-                <div class="row">
-                    <div class="form-check col-12 col-sm-6 col-lg-4">
-                        <input class="form-check-input" type="radio" name="tipoPintura" id="casa-nova" value="36"
-                               checked>
-                        <label class="form-check-label" for="casa-nova"> Casa nova completa </label>
-                    </div>
-
-                    <div class="form-check col-12 col-sm-6 col-lg-4">
-                        <input class="form-check-input" type="radio" name="tipoPintura" id="re-pintura" value="21">
-                        <label class="form-check-label" for="re-pintura"> Repintura </label>
-                    </div>
-
-                    <div class="form-check col-12 col-sm-6 col-lg-4">
-                        <input class="form-check-input" type="radio" name="tipoPintura" id="textura" value="5">
-                        <label class="form-check-label" for="textura"> Textura </label>
+                    <div class="row">
+                        <div class=" text-center col-12">
+                            <h2 style="font-size: 18px; font-weight: bold; color: #111111;">Escolha uma opção abaixo</h2>
+                        </div>
                     </div>
 
-                    <div class="form-check col-12 col-sm-6 col-lg-4">
-                        <input class="form-check-input" type="radio" name="tipoPintura" id="grafiato" value="8">
-                        <label class="form-check-label" for="grafiato"> Grafiato </label>
-                    </div>
+                    <div class="row">
+                        <div class="form-check col-12 col-sm-6 col-lg-4">
+                            <input class="form-check-input" type="radio" name="tipoPintura" id="casa-nova" value="36" checked>
+                            <label class="form-check-label" for="casa-nova"> Casa nova completa </label>
+                        </div>
 
-                    <div class="form-check col-12 col-sm-5 col-lg-4">
-                        <input class="form-check-input" type="radio" name="tipoPintura" id="massa-corrida" value="12">
-                        <label class="form-check-label" for="massa-corrida">Massa Corrida</label>
-                    </div>
+                        <div class="form-check col-12 col-sm-6 col-lg-4">
+                            <input class="form-check-input" type="radio" name="tipoPintura" id="re-pintura" value="21">
+                            <label class="form-check-label" for="re-pintura"> Repintura </label>
+                        </div>
 
-                    <div class="form-check col-12 col-sm-6 col-lg-4">
-                        <input class="form-check-input" type="radio" name="tipoPintura" id="massa-acrilica" value="18">
-                        <label class="form-check-label" for="massa-acrilica">Massa Acrílica</label>
+                        <div class="form-check col-12 col-sm-6 col-lg-4">
+                            <input class="form-check-input" type="radio" name="tipoPintura" id="textura" value="5">
+                            <label class="form-check-label" for="textura"> Textura </label>
+                        </div>
+
+                        <div class="form-check col-12 col-sm-6 col-lg-4">
+                            <input class="form-check-input" type="radio" name="tipoPintura" id="grafiato" value="8">
+                            <label class="form-check-label" for="grafiato"> Grafiato </label>
+                        </div>
+
+                        <div class="form-check col-12 col-sm-5 col-lg-4">
+                            <input class="form-check-input" type="radio" name="tipoPintura" id="massa-corrida" value="12">
+                            <label class="form-check-label" for="massa-corrida">Massa Corrida</label>
+                        </div>
+
+                        <div class="form-check col-12 col-sm-6 col-lg-4">
+                            <input class="form-check-input" type="radio" name="tipoPintura" id="massa-acrilica" value="18">
+                            <label class="form-check-label" for="massa-acrilica">Massa Acrílica</label>
+                        </div>
                     </div>
-                </div>
-                <hr>
-                <div>
-                    <label class="h5" style="color: #fff; font-weight: bold; margin-top: 20px">Preço parcial: R$
+                    <hr>
+                    <div>
+                        <label class="h5" style="color: #fff; font-weight: bold; margin-top: 20px">Preço parcial: R$
                         <span id="preco">0</span></label>
-                </div>
+                    </div>
 
-                <div>
-                    <button type="submit" id="calcular" class="btn btn-primary" style="margin-top: 5px">Calcular
+                    <div>
+                        <button type="submit" id="calcular" class="btn btn-primary" style="margin-top: 5px">Calcular
                     </button>
-                </div>
+                    </div>
 
-            </form>
-        </div>
-    </section>
-
+                </form>
+            </div>
+        </section>
+    </main>
     <!--==========================
       Contact Section
     ============================-->
@@ -181,7 +181,7 @@
                     <div class="contact-phone">
                         <i class="ion-ios-telephone-outline"></i>
                         <h3>Telefones</h3>
-                        <p><img src="images/icon_whats.png"/><a href="tel:44999214246"> (44) 99921-4246 - Heliton</a>
+                        <p><img src="images/icon_whats.png" /><a href="tel:44999214246"> (44) 99921-4246 - Heliton</a>
                         </p>
                         <p><img src="images/phone-black.png"><a href="tel:44999247004"> (44) 99924-7004 - Heleno</a></p>
                     </div>
@@ -204,23 +204,19 @@
                 <form action="" method="post" role="form" class="contactForm">
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome"
-                                   data-rule="minlen:4" data-msg="Digite no mínimo 4 letras"/>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" data-rule="minlen:4" data-msg="Digite no mínimo 4 letras" />
                             <div class="validation"></div>
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email"/>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email" />
                         </div>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" name="subject" id="subject"
-                               placeholder="Assunto ou Telefone"
-                               data-rule="minlen:4" data-msg="Digite no mínimo 8 letras no assunto"/>
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto ou Telefone" data-rule="minlen:4" data-msg="Digite no mínimo 8 letras no assunto" />
                         <div class="validation"></div>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" name="message" id="message" rows="5" data-rule="required"
-                                  data-msg="Escreva algo para nós" placeholder="Mensagem"></textarea>
+                        <textarea class="form-control" name="message" id="message" rows="5" data-rule="required" data-msg="Escreva algo para nós" placeholder="Mensagem"></textarea>
                         <div class="validation"></div>
                     </div>
                     <div class="text-center">
@@ -230,91 +226,89 @@
             </div>
 
         </div>
-    </section><!-- #contact -->
-</main>
-<!--==========================
+    </section>
+    <!-- #contact -->
+
+    <!--==========================
   Footer
 ============================-->
-<footer id="footer">
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
 
-                <div class="col-lg-3 col-md-6 footer-info">
-                    <h3>Utopia Pinturas</h3>
-                    <p>Peça seu orçamento sem compromisso. Pinturas para sua casa, loja ou prédio.</p>
-                </div>
+                    <div class="col-lg-3 col-md-6 footer-info">
+                        <h3>Utopia Pinturas</h3>
+                        <p>Peça seu orçamento sem compromisso. Pinturas para sua casa, loja ou prédio.</p>
+                    </div>
 
-                <div class="col-lg-2 col-md-6 footer-links">
-                    <h4>Links úteis</h4>
-                    <ul>
-                        <li><i class="ion-ios-arrow-right"></i> <a href="/">Inicio</a></li>
-                        <li><i class="ion-ios-arrow-right"></i> <a href="/simulador-de-pintura">Simulador</a></li>
-                        <li><i class="ion-ios-arrow-right"></i> <a href="/cores-para-pintar">Cores</a></li>
-                        <li><i class="ion-ios-arrow-right"></i> <a href="/#services">Serviços</a></li>
-                        <li><i class="ion-ios-arrow-right"></i> <a href="/#portfolio">Portfólio</a></li>
-                        <li><i class="ion-ios-arrow-right"></i> <a href="#contact">Contato</a></li>
-                        <li><i class="ion-ios-arrow-right"></i> <a href="/parceiros-pinturas">Parceiros</a></li>
-                    </ul>
-                </div>
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Links úteis</h4>
+                        <ul>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="/">Inicio</a></li>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="/simulador-de-pintura">Simulador</a></li>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="/cores-para-pintar">Cores</a></li>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="/#services">Serviços</a></li>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="/#portfolio">Portfólio</a></li>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="#contact">Contato</a></li>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="/parceiros-pinturas">Parceiros</a></li>
+                        </ul>
+                    </div>
 
-                <div class="col-lg-4 col-md-6 footer-contact">
-                    <h4>Contate-nos</h4>
-                    <p>Maringá, Paraná <br>
-                        <strong>Telefone:</strong>44 99921-4246 Heliton <img src="images/icon-whats-white.png"><br>
-                        <strong>Telefone:</strong>44 99924-7004 Heleno <img src="images/phone-white.png"><br>
-                        <strong>Email:</strong> contato@utopiapinturas.com.br
-                    </p>
+                    <div class="col-lg-4 col-md-6 footer-contact">
+                        <h4>Contate-nos</h4>
+                        <p>Maringá, Paraná <br>
+                            <strong>Telefone:</strong>44 99921-4246 Heliton <img src="images/icon-whats-white.png"><br>
+                            <strong>Telefone:</strong>44 99924-7004 Heleno <img src="images/phone-white.png"><br>
+                            <strong>Email:</strong> contato@utopiapinturas.com.br
+                        </p>
 
-                    <div class="social-links">
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                        <a href="https://br.linkedin.com/in/heliton-leno" target="_blank" class="linkedin">
+                        <div class="social-links">
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="https://br.linkedin.com/in/heliton-leno" target="_blank" class="linkedin">
                             <i class="fa fa-linkedin"></i>
                         </a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-lg-3 col-md-6 footer-newsletter">
-                    <h4>News Letter</h4>
-                    <p>Assine nossa Newsletter para receber nossas promoções exclusivas!</p>
-                    <form action="" method="post">
-                        <input type="email" placeholder="email@dominio.com" name="email"><input type="submit"
-                                                                                                value="Assinar">
-                    </form>
-                </div>
+                    <div class="col-lg-3 col-md-6 footer-newsletter">
+                        <h4>News Letter</h4>
+                        <p>Assine nossa Newsletter para receber nossas promoções exclusivas!</p>
+                        <form action="" method="post">
+                            <input type="email" placeholder="email@dominio.com" name="email"><input type="submit" value="Assinar">
+                        </form>
+                    </div>
 
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="container">
-        <div class="copyright">
-            &copy; Copyright <strong>Utopia Pinturas 2018</strong>. Todos os direitos reservados.
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong>Utopia Pinturas 2018</strong>. Todos os direitos reservados.
+            </div>
         </div>
-    </div>
-</footer><!-- #footer -->
+    </footer>
+    <!-- #footer -->
 
-<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-<script src="javascripts/easing/easing.min.js"></script>
-<script src="javascripts/superfish/superfish.min.js"></script>
-<script src="javascripts/wow/wow.min.js"></script>
-<script src="javascripts/waypoints/waypoints.min.js"></script>
-<script src="javascripts/isotope/isotope.pkgd.min.js"></script>
-<script src="javascripts/touchSwipe/jquery.touchSwipe.min.js"></script>
+    <script src="javascripts/easing/easing.min.js"></script>
+    <script src="javascripts/superfish/superfish.min.js"></script>
+    <script src="javascripts/wow/wow.min.js"></script>
+    <script src="javascripts/waypoints/waypoints.min.js"></script>
+    <script src="javascripts/isotope/isotope.pkgd.min.js"></script>
+    <script src="javascripts/touchSwipe/jquery.touchSwipe.min.js"></script>
 
-<script src="javascripts/contactform.js"></script>
-<script src="javascripts/calcularOrcamento.js"></script>
-<!-- Template Main Javascript File -->
-<script src="javascripts/simulador.js"></script>
+    <script src="javascripts/contactform.js"></script>
+    <script src="javascripts/calcularOrcamento.js"></script>
+    <!-- Template Main Javascript File -->
+    <script src="javascripts/simulador.js"></script>
 </body>
+
 </html>

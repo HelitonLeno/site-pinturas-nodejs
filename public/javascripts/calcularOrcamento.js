@@ -36,11 +36,11 @@ $('#calcular').on('click', function (e) {
 
 function calculaCasaNova(metros, preco) {
     if (metros >= 35 && metros <= 80) {
-        metros *= 36;
+        metros *= 35.7;
     } else if (metros > 80 && metros <= 90) {
-        metros *= 45;
+        metros *= 44.44;
     } else if (metros > 90) {
-        metros *= 50;
+        metros *= 45;
     } else {
         metros = 'Mínimo 35 metros!';
     }
@@ -93,9 +93,10 @@ function calcularGrafiato(metros, preco) {
 }
 
 function imprimirPreco(metros, preco) {
+
     if (metros === 'Mínimo 35 metros!') {
         preco.text(metros);
     } else {
-        preco.text(metros + ' reais');
+        preco.text(metros.toFixed(2) + ' reais');
     }
 }
