@@ -97,6 +97,6 @@ function imprimirPreco(metros, preco) {
     if (metros === 'Mínimo 35 metros!') {
         preco.text(metros);
     } else {
-        preco.text(metros.toFixed(2) + ' reais');
+        preco.text(metros.toFixed(0) + ' reais');
     }
 }
