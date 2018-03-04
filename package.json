@@ -13,7 +13,9 @@
     "express": "~4.15.5",
     "express-force-https": "^1.0.0",
     "morgan": "~1.9.0",
+    "mysql": "^2.15.0",
     "nodemailer": "^4.4.2",
+    "npm": "^5.7.1",
     "serve-favicon": "~2.4.5"
   },
   "devDependencies": {}
