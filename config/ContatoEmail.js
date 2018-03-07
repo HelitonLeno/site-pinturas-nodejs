@@ -3,19 +3,19 @@ const nodemailer = require('nodemailer');
 module.exports = function (msg) {
     nodemailer.createTestAccount((err, account) => {
         let transporter = nodemailer.createTransport({
-            host: 'smtp.umbler.com',
+            host: process.env.HOST,
             port: 587,
             secure: false,
             auth: {
-                user: 'contato@utopiapinturas.com.br',
-                pass: 'Heliton1825'
+                user: process.env.EMAIL,
+                pass: process.env.PASS
             }
         });
 
         let mailOptions = {
-            from: '"Utopia Pinturas" <contato@utopiapinturas.com.br>',
-            to: 'ciencia_@live.com',
-            subject: 'Alguem entrou em contato',
+            from: '"Utopia Pinturas" <' + process.env.EMAIL + '>',
+            to: process.env.MYEMAIL,
+            subject: 'Alguém entrou em contato',
             text: 'detalhes',
             html: msg
         };
